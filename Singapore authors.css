@@ -1,0 +1,284 @@
+
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background: #333;
+	color: #fff;
+	height: 100vh;
+	line-height: 1.6;
+	overflow: hidden;
+  }
+
+  
+  .container {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll; 
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+
+  }
+  
+  .lead {
+	font-size: 1.5rem;
+	animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+  @keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+  .navbar {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	
+  }
+
+  .navbar ul {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: center;
+  }
+  
+  .navbar ul li {
+	margin: 0 1rem;
+	padding: 1rem;
+  }
+  
+  .navbar ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #e4e4e4;
+  }
+  
+  .navbar ul li a:hover {
+	color: rgb(88, 194, 255);
+  }
+  
+  section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	scroll-snap-align: center;
+  }
+  
+  section h1 {
+	font-size: 4rem;
+	animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+  @keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+  
+  section#home {
+	background-color: #751313;
+}
+  
+  section#about {
+	background-color: #751313;
+  }
+  
+  
+  section#service {
+	background-color: #751313;
+  }
+  
+  section#contact {
+	background-color: #751313;
+  }
+
+  section#Amanda {
+	background-color: #751313;
+  }
+
+.nigger {
+	position: relative;
+    top: 340px;
+    left: -600px;
+
+}
+.ayee {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	position: relative;
+    top: 800px;
+    right: 600px;
+}
+.angi{
+	position: relative;
+    top: 60px;
+    right: 100px;
+}
+.hies{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	position: relative;
+    top: 150px;
+    right: 10px;
+	text-shadow: 7px 3px 19px rgba(0,0,0,0.24);
+}
+.hies {
+    opacity: 0;
+    animation: fade-in-left 1s forwards;
+  }
+  
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+.hies{
+	color: rgb(255, 255, 255);
+	
+}
+.border{
+	position: relative;
+	top: 350px;
+	box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+
+
+}
+.age {
+	margin-bottom: auto;
+	position: relative;
+	top: -200px;
+}
+.ejer {
+	position: relative;
+	top: 100px;
+}
+button {
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+ position: relative;
+ top: -380px;
+ right: 100px;
+}
+
+button::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #212121;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+button:hover {
+ color: #e8e8e8;
+}
+
+button:hover::before {
+ width: 100%;
+}
+
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -1%;
+}
+.left-col{
+    flex-basis: 40%;
+	animation: fade-in-left 1s forwards;
+}
+@keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+.right-col{
+    flex-basis: 55%; animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+     80% {
+        opacity: 1;
+     }
+}
+.left-col img{
+    width: 60%;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+}
+.left-col img:hover{
+    filter: grayscale(1);
+}
+.right-col h1{
+    font-style: 55px;
+    font-weight: 600;
+	position: relative;
+	top: -140px;
+
+	
+}
+.right-col p{
+    color: #ffffff;
+    margin: 0 70px;
+	text-align: left;
+	position: relative;
+	top: -100px;
+	font-weight: 600;
+	font-size: 20px;
+	flex: auto;
+	
+}
